@@ -1,6 +1,6 @@
-import WalletChecker from "../../lib/WalletsChecker";
+import WalletsChecker from "../../lib/WalletsChecker";
 
 export default async function handler(req, res) {
-  await WalletChecker.checkBlocks()
+  await WalletsChecker.checkBlocks()
   res.status(200).json({ status: true })
 }
